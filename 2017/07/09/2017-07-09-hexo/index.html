@@ -6,19 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>第一篇博客 | LDD小地盘</title>
+  <title>用hexo和github搭建个人博客 | LDD小地盘</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="准备开始自己的博客之旅了！">
+  <meta name="description" content="总结简单的有关使用hexo和github搭建个人博客的过程">
 <meta name="keywords" content="总结,知识管理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇博客">
-<meta property="og:url" content="http://yoursite.com/2017/07/08/2017-07-09-plan1/index.html">
+<meta property="og:title" content="用hexo和github搭建个人博客">
+<meta property="og:url" content="http://yoursite.com/2017/07/09/2017-07-09-hexo/index.html">
 <meta property="og:site_name" content="LDD小地盘">
-<meta property="og:description" content="准备开始自己的博客之旅了！">
-<meta property="og:updated_time" content="2017-07-08T15:48:45.483Z">
+<meta property="og:description" content="总结简单的有关使用hexo和github搭建个人博客的过程">
+<meta property="og:image" content="http://yoursite.com/img/1.png">
+<meta property="og:updated_time" content="2017-07-09T11:36:45.011Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一篇博客">
-<meta name="twitter:description" content="准备开始自己的博客之旅了！">
+<meta name="twitter:title" content="用hexo和github搭建个人博客">
+<meta name="twitter:description" content="总结简单的有关使用hexo和github搭建个人博客的过程">
+<meta name="twitter:image" content="http://yoursite.com/img/1.png">
   
     <link rel="alternative" href="/atom.xml" title="LDD小地盘" type="application/atom+xml">
   
@@ -158,39 +160,41 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2017-07-09-plan1" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2017-07-09-hexo" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      第一篇博客
+      用hexo和github搭建个人博客
     </h1>
   
 
         
-        <a href="/2017/07/08/2017-07-09-plan1/" class="archive-article-date">
-  	<time datetime="2017-07-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-08</time>
+        <a href="/2017/07/09/2017-07-09-hexo/" class="archive-article-date">
+  	<time datetime="2017-07-08T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="开篇"><a href="#开篇" class="headerlink" title="开篇"></a>开篇</h2><p>今天是2017年7月8号，作为一个学习计算机专业六年的人来说，现在才开始写自己的博客是有点晚了，但是我总相信，不管什么时候，只要你愿意开始，并保持一颗热爱的心，总能做出一点成绩来。</p>
-<p>已经七月份了，距离正式秋招开始就只有不到两个月的时间了，是时候把握机会好好度过这两个月了。</p>
+        <h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>安装 <a href="http://git-scm.com/download/win" target="_blank" rel="external">git</a><br>安装 <a href="https://nodejs.org/en/download/" target="_blank" rel="external">node.js</a><br>安装hexo 使用命令行npm install -g hexo  </p>
+<h2 id="中间"><a href="#中间" class="headerlink" title="中间"></a>中间</h2><ul>
+<li>hexo init 初始化</li>
+<li>npm install 安装依赖包</li>
+<li>hexo g  生成静态文件</li>
+<li>hexo s 在本地预览效果</li>
+<li>hexo d 同步到github</li>
+<li>hexo new “name” 添加新的文章</li>
+</ul>
 <blockquote>
-<p>任何时候开始都不晚，只要你愿意改变，愿意坚持。</p>
-<p>分享一句自己每天都看到的话：有时候，你以为天要塌下来，其实是你自己站歪了。</p>
+<p>出现这个错误： ERROR Deployer not found: <br><br>安装  npm install hexo-deployer-git –save</p>
+<p>出现这个错误：DeprecationWarning: fs.SyncWriteStream is deprecated.<br>安装 npm install hexo-fs –save</p>
 </blockquote>
-<h2 id="写在中间"><a href="#写在中间" class="headerlink" title="写在中间"></a>写在中间</h2><p>第一篇博客竟然不是技术分享……那就给自己列一个小计划吧</p>
-<h3 id="一、作息规律，养成早起习惯"><a href="#一、作息规律，养成早起习惯" class="headerlink" title="一、作息规律，养成早起习惯"></a>一、作息规律，养成早起习惯</h3><p>早睡早起身体好呐</p>
-<h3 id="二、每天刷笔试题"><a href="#二、每天刷笔试题" class="headerlink" title="二、每天刷笔试题"></a>二、每天刷笔试题</h3><p>每天至少一道，先关注质，在这个基础上，再抓紧时间练量。</p>
-<h3 id="三、每天都要看书"><a href="#三、每天都要看书" class="headerlink" title="三、每天都要看书"></a>三、每天都要看书</h3><blockquote>
-<p>《JavaScript DOM编程艺术》<br>《锋利的jQuery》<br>《深入浅出nodeJs》<br>《JavaScript高级程序设计》</p>
-</blockquote>
-<h3 id="四、项目进展"><a href="#四、项目进展" class="headerlink" title="四、项目进展"></a>四、项目进展</h3><p>每天都要完成任务。</p>
+<h2 id="更换电脑后想继续更新博客"><a href="#更换电脑后想继续更新博客" class="headerlink" title="更换电脑后想继续更新博客"></a>更换电脑后想继续更新博客</h2><p> 首先创建一个文件夹比如blog用来保存自己创建的博客，然后hexo init生成一个默认的博客模板，如图：<img src="/img/1.png">，其中node_modules和db.json 保留，其它内容删除，然后在这个目录中git init，初始化一个仓库，接着  git remote add origin git@github.com:dandanBrave/blogBackup.git ，添加一个远端库，最后git pull origin master，将GitHub仓库中的这个备份博客pull到本地，这样本地就有一个博客啦，又可以继续更新咯。<br> 下一步，进行hexo d -g将博客部署发布到GitHub中，这样即使换电脑了，也可以继续更新自己的博客。</p>
+<p>每天都要完成任务。</p>
 <h3 id="五、毕业设计"><a href="#五、毕业设计" class="headerlink" title="五、毕业设计"></a>五、毕业设计</h3><p>当然要保证毕业设计的顺利进展。</p>
 <h2 id="改变"><a href="#改变" class="headerlink" title="改变"></a>改变</h2><p>改变目前这个效率比较低的状态，高效率工作。<br>改变内心的一些想法，踏踏实实，一步一步去做。</p>
 <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>第一篇博客先写这么多</p>
@@ -299,7 +303,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/07/08/2017-07-09-plan1/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/07/09/2017-07-09-hexo/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -313,15 +317,20 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/07/08/2017-07-08-plan/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/07/09/2017-07-09-git/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          第一篇博客
+          git
         
       </div>
     </a>
   
+  
+    <a href="/2017/07/08/2017-07-08-plan/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">第一篇博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
