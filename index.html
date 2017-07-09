@@ -283,11 +283,18 @@
 <p>出现这个错误： ERROR Deployer not found: <br><br>安装  npm install hexo-deployer-git –save</p>
 <p>出现这个错误：DeprecationWarning: fs.SyncWriteStream is deprecated.<br>安装 npm install hexo-fs –save</p>
 </blockquote>
-<h2 id="更换电脑后想继续更新博客"><a href="#更换电脑后想继续更新博客" class="headerlink" title="更换电脑后想继续更新博客"></a>更换电脑后想继续更新博客</h2><p> 首先创建一个文件夹比如blog用来保存自己创建的博客，然后hexo init生成一个默认的博客模板，如图：<img src="/img/1.png">，其中node_modules和db.json 保留，其它内容删除，然后在这个目录中git init，初始化一个仓库，接着  git remote add origin git@github.com:dandanBrave/blogBackup.git ，添加一个远端库，最后git pull origin master，将GitHub仓库中的这个备份博客pull到本地，这样本地就有一个博客啦，又可以继续更新咯。<br> 下一步，进行hexo d -g将博客部署发布到GitHub中，这样即使换电脑了，也可以继续更新自己的博客。</p>
-<p>每天都要完成任务。</p>
-<h3 id="五、毕业设计"><a href="#五、毕业设计" class="headerlink" title="五、毕业设计"></a>五、毕业设计</h3><p>当然要保证毕业设计的顺利进展。</p>
-<h2 id="改变"><a href="#改变" class="headerlink" title="改变"></a>改变</h2><p>改变目前这个效率比较低的状态，高效率工作。<br>改变内心的一些想法，踏踏实实，一步一步去做。</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>第一篇博客先写这么多</p>
+<h2 id="更换电脑后想继续更新博客"><a href="#更换电脑后想继续更新博客" class="headerlink" title="更换电脑后想继续更新博客"></a>更换电脑后想继续更新博客</h2><p> 首先创建一个文件夹比如blog用来保存自己创建的博客，然后hexo init生成一个默认的博客模板，如图：<img src="/img/1.png"><br>，其中node_modules和db.json 保留，其它内容删除，然后在这个目录中git init，初始化一个仓库，接着  git remote add origin git@github.com:dandanBrave/blogBackup.git ，添加一个远端库，最后git pull origin master，将GitHub仓库中的这个备份博客pull到本地，这样本地就有一个博客啦，又可以继续更新咯。<br> 下一步，进行hexo d -g将博客部署发布到GitHub中，这样即使换电脑了，也可以继续更新自己的博客。</p>
+<h2 id="hexo生成博客模板各个部分介绍"><a href="#hexo生成博客模板各个部分介绍" class="headerlink" title="hexo生成博客模板各个部分介绍"></a>hexo生成博客模板各个部分介绍</h2><p>如图，<img src="/img/2.png"><br><br>其中，</p>
+<blockquote>
+<p>.deploy_git目录中是将public中的内容通过hexo d -g发布部署后生成的。</p>
+<p>node_modules目录是hexo框架的内容</p>
+<p>public是本地发布的内容，hexo s 命令会生成这个</p>
+<p>.gitignore该文件中记录git的忽略文件，其中包括<img src="/img/3.png"><br></p>
+<p>source 目录记录本地的博客文件，每次编写的博客文件都在这个文件夹中的_posts文件夹中</p>
+<p>themes 目录记录博客使用的主题</p>
+<p>config.yml 是博客的一些配置信息</p>
+</blockquote>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>这篇文章到这里就结束啦~</p>
 
       
 
