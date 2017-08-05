@@ -7,7 +7,7 @@ function showPic(e, sUrl) {
     document.getElementById("Layer1").style.top = y -100 + 'px';
     document.getElementById("Layer1").style.fontSize = 20+ 'px';
     document.getElementById("Layer1").style.color = 'black';
-    document.getElementById("Layer1").innerHTML = "扫码加入南京前端分享 <img style="height:200px" border="0" src=" + sUrl + ">";
+    document.getElementById("Layer1").innerHTML = "扫码加入南京前端分享 <img style='height:200px' border='0' src=" + sUrl + ">";
     document.getElementById("Layer1").style.display = "";
 }
 
