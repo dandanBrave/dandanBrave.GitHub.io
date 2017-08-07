@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>sublime 快捷键来啦 | LDD小地盘</title>
+  <title>webpack | LDD小地盘</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录sublime 的快捷键">
+  <meta name="description" content="webpack常用命令">
 <meta name="keywords" content="总结,知识管理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sublime 快捷键来啦">
-<meta property="og:url" content="http://yoursite.com/2017/08/04/2017-08-04-sublime快捷键/index.html">
+<meta property="og:title" content="webpack">
+<meta property="og:url" content="http://yoursite.com/2017/03/12/2017-03-12-webpack常用命令/index.html">
 <meta property="og:site_name" content="LDD小地盘">
-<meta property="og:description" content="记录sublime 的快捷键">
-<meta property="og:updated_time" content="2017-08-05T13:36:29.893Z">
+<meta property="og:description" content="webpack常用命令">
+<meta property="og:updated_time" content="2017-08-06T10:20:44.063Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sublime 快捷键来啦">
-<meta name="twitter:description" content="记录sublime 的快捷键">
+<meta name="twitter:title" content="webpack">
+<meta name="twitter:description" content="webpack常用命令">
   
     <link rel="alternative" href="/atom.xml" title="LDD小地盘" type="application/atom+xml">
   
@@ -140,46 +140,40 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2017-08-04-sublime快捷键" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2017-03-12-webpack常用命令" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      sublime 快捷键来啦
+      webpack
     </h1>
   
 
         
-        <a href="/2017/08/04/2017-08-04-sublime快捷键/" class="archive-article-date">
-  	<time datetime="2017-08-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-04</time>
+        <a href="/2017/03/12/2017-03-12-webpack常用命令/" class="archive-article-date">
+  	<time datetime="2017-03-11T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="记录sublime的快捷键"><a href="#记录sublime的快捷键" class="headerlink" title="记录sublime的快捷键"></a>记录sublime的快捷键</h2><p>1、Ctrl+H ：查找替换</p>
-<p>2、Ctrl+D ：选择游标所在单词，连续Ctrl+D 实现多行选择（选择与第一次选择相同的单词）</p>
-<p>3、Ctrl+K Ctrl+D 跳过当前选择，选择下一个<br><a id="more"></a></p>
-<p>4、Ctrl+shift+D：复制游标所在行</p>
-<p>5、Alt+F3：选择所有与游标所在单词相同的单词</p>
-<p>6、按住shift键，然后按住鼠标右键向下拖动，也可产生多行游标</p>
-<p>7、Ctrl+shift+p: 打开命令模式</p>
-<p>8、Ctrl+shift+k: 删除一行</p>
-<p>9、通过命令模式可以安装新的插件（package control:install package);</p>
-<p>10、隐藏或显示小地图（view：toggle minimap）；</p>
-<p>11、修改编辑区语法syntax（set syntax：）</p>
-<p>12、ctrl+shirt+enter 在当前上方添加一行</p>
-<p>13、（ul&gt;.item$*10{content}）+（ctrl+E）</p>
-<blockquote>
-<p>号生成子元素 ，$ 产生序号，{ }产生内容</p>
-</blockquote>
-<p>14、Ctrl+] 增加缩进 [ 减小缩进。</p>
-<p>15、alt+f3 全选，可以选中一部分再选择所有有该部分的元素。如 &gt;&lt; 标签之间的两个符号</p>
-<p>16、ctrl+shift+v 保持缩进粘贴</p>
-<p>17、Alt+Ctrl+R 可以看到服务器响应</p>
+        <h3 id="webpack常用命令"><a href="#webpack常用命令" class="headerlink" title="webpack常用命令"></a>webpack常用命令</h3><p>构建命令，webpack的常用参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$ webpack --config webpack.min.js //另一份配置文件</div><div class="line"></div><div class="line">$ webpack --display-error-details //显示异常信息</div><div class="line"></div><div class="line">$ webpack --watch   //监听变动并自动打包</div><div class="line"> </div><div class="line">$ webpack -p    //压缩混淆脚本，这个非常非常重要！</div><div class="line"> </div><div class="line">$ webpack -d    //生成map映射文件，告知哪些模块被最终打包到哪里了</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p><strong>webpack-dev-server</strong></p>
+<p>webpack-dev-server是一个小型的node.js Express服务器,它使用webpack-dev-middleware中间件来为通过webpack打包生成的资源文件提供Web服务。它还有一个通过Socket.IO连接着webpack-dev-server服务器的小型运行时程序。webpack-dev-server发送关于编译状态的消息到客户端，客户端根据消息作出响应。</p>
+<p>webpack-dev-server有两种模式支持自动刷新——iframe模式和inline模式</p>
+<ul>
+<li>在iframe模式下：页面是嵌套在一个iframe下的，在代码发生改动的时候，这个iframe会重新加载</li>
+<li>在inline模式下：一个小型的webpack-dev-server客户端会作为入口文件打包，这个客户端会在后端代码改变的时候刷新页面</li>
+</ul>
+<p>使用iframe模式，无需额外配置，只需在浏览器输入<br><code>http://localhost:8080/webpack-dev-server/index.html</code></p>
+<p>使用inline模式有两种方式：命令行和nodejs API<br>1.命令行： 在运行时，加上 –inline 选项<br><code>$ webpack-dev-server --inline</code> 访问，通过<a href="http://localhost:8080" target="_blank" rel="external">http://localhost:8080</a> 就可以访问</p>
+<p>2.nodejs API 方式 ，需要手动把 <code>webpack-dev-server/client?http://localhost:8080</code> 加到配置文件的入口文件处</p>
+<p>webpac-dev-server <strong>支持Hot Module Replacement</strong>，即模块热替换，在前端代码变动的时候无需整个刷新页面，只把变化的部分替换掉</p>
+<p>下章，就开始利用 Webpack 实现 前端项目的 自动构建部署！</p>
 
       
 
@@ -290,7 +284,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/04/2017-08-04-sublime快捷键/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/03/12/2017-03-12-webpack常用命令/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -304,18 +298,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/08/05/2017-08-04-MVVM模型/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/07/09/2017-07-09-git/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          MVX模型
+          git
         
       </div>
     </a>
   
   
-    <a href="/2017/07/09/2017-07-09-git/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">git</div>
+    <a href="/2017/03/11/2017-03-11-vue基础/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue基础</div>
       <i class="icon-circle-right"></i>
     </a>
   
