@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/03/11/2017-03-11-vue基础/index.html">
 <meta property="og:site_name" content="LDD小地盘">
 <meta property="og:description" content="vue的一些基础语法">
-<meta property="og:updated_time" content="2017-08-06T14:06:31.102Z">
+<meta property="og:updated_time" content="2017-08-07T02:18:03.245Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue基础">
 <meta name="twitter:description" content="vue的一些基础语法">
@@ -178,6 +178,10 @@
 <li>Web 组件规范仍然处于草案阶段，并且尚无浏览器原生实现。相比之下，Vue 组件不需要任何补丁，并且在所有支持的浏览器（IE9 及更高版本）之下表现一致。必要时，Vue 组件也可以包装于原生自定义元素之内。</li>
 <li>Vue 组件提供了纯自定义元素所不具备的一些重要功能，最突出的是跨组件数据流，自定义事件通信以及构建工具集成。</li>
 </ol>
+<h3 id="一些指令"><a href="#一些指令" class="headerlink" title="一些指令"></a>一些指令</h3><blockquote>
+<p>v-once 指令，执行一次性插值，当数据改变时，插值处的内容不会更新。但这会影响到该节点上所有的数<br>     <code>&lt;span v-once&gt;This will never change: &lt;/span&gt;</code><br>v-html 指令：双大括号会将数据解释为纯文本，而非 HTML.使用该指令可以输出html<br>     <code>&lt;div v-html=&quot;rawHtml&quot;&gt;&lt;/div&gt;</code><br>     这个 div 的内容将会被替换成为属性值 rawHtml，直接作为 HTML —— 会忽略解析属性值中的数据绑定。注意，你不能使用 v-html 来复合局部模板，因为 Vue 不是基于字符串的模板引擎。反之，对于用户界面(UI)，组件更适合作为可重用和可组合的基本单位。<br>v-bind 指令：Mustache （双大括号） 不能在 HTML 属性中使用，应使用 v-bind 指令：<br>     <code>&lt;div v-bind:id=&quot;dynamicId&quot;&gt;&lt;/div&gt;</code><br>     这对布尔值的属性也有效 —— 如果条件被求值为 false 的话该属性会被移除：<br>      <code>&lt;button v-bind:disabled=&quot;isButtonDisabled&quot;&gt;Button&lt;/button&gt;</code></p>
+<p>v-on 指令:用于监听 DOM 事件来触发一些 JavaScript 代码。<br>v-show 指令:根据条件展示元素的选项<br>       <code>&lt;h1 v-show=&quot;ok&quot;&gt;Hello!&lt;/h1&gt;</code><br>v-for 指令:根据一组数组的选项列表进行渲染,v-for 指令需要以 item in items 形式的特殊语法， items 是源数据数组并且 item 是数组元素迭代的别名。<br>v-model 指令在表单控件元素上创建双向数据绑定,它会根据控件类型自动选取正确的方法来更新元素。</p>
+</blockquote>
 
       
 
