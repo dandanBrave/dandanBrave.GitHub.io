@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>sublime 快捷键来啦 | LDD小地盘</title>
+  <title>vue组件 | LDD小地盘</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录sublime 的快捷键">
+  <meta name="description" content="vue的组件用法">
 <meta name="keywords" content="总结,知识管理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sublime 快捷键来啦">
-<meta property="og:url" content="http://yoursite.com/2017/08/04/2017-08-04-sublime快捷键/index.html">
+<meta property="og:title" content="vue组件">
+<meta property="og:url" content="http://yoursite.com/2017/03/13/2017-03-13-vue组件/index.html">
 <meta property="og:site_name" content="LDD小地盘">
-<meta property="og:description" content="记录sublime 的快捷键">
-<meta property="og:updated_time" content="2017-08-05T13:36:29.893Z">
+<meta property="og:description" content="vue的组件用法">
+<meta property="og:updated_time" content="2017-08-07T04:13:36.866Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sublime 快捷键来啦">
-<meta name="twitter:description" content="记录sublime 的快捷键">
+<meta name="twitter:title" content="vue组件">
+<meta name="twitter:description" content="vue的组件用法">
   
     <link rel="alternative" href="/atom.xml" title="LDD小地盘" type="application/atom+xml">
   
@@ -140,47 +140,78 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2017-08-04-sublime快捷键" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2017-03-13-vue组件" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      sublime 快捷键来啦
+      vue组件
     </h1>
   
 
         
-        <a href="/2017/08/04/2017-08-04-sublime快捷键/" class="archive-article-date">
-  	<time datetime="2017-08-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-04</time>
+        <a href="/2017/03/13/2017-03-13-vue组件/" class="archive-article-date">
+  	<time datetime="2017-03-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-13</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="记录sublime的快捷键"><a href="#记录sublime的快捷键" class="headerlink" title="记录sublime的快捷键"></a>记录sublime的快捷键</h2><p>1、Ctrl+H ：查找替换</p>
-<p>2、Ctrl+D ：选择游标所在单词，连续Ctrl+D 实现多行选择（选择与第一次选择相同的单词）</p>
-<p>3、Ctrl+K Ctrl+D 跳过当前选择，选择下一个<br><a id="more"></a></p>
-<p>4、Ctrl+shift+D：复制游标所在行</p>
-<p>5、Alt+F3：选择所有与游标所在单词相同的单词</p>
-<p>6、按住shift键，然后按住鼠标右键向下拖动，也可产生多行游标</p>
-<p>7、Ctrl+shift+p: 打开命令模式</p>
-<p>8、Ctrl+shift+k: 删除一行</p>
-<p>9、通过命令模式可以安装新的插件（package control:install package);</p>
-<p>10、隐藏或显示小地图（view：toggle minimap）；</p>
-<p>11、修改编辑区语法syntax（set syntax：）</p>
-<p>12、ctrl+shirt+enter 在当前上方添加一行</p>
-<p>13、（ul&gt;.item$*10{content}）+（ctrl+E）</p>
-<blockquote>
-<p>号生成子元素 ，$ 产生序号，{ }产生内容</p>
+        <h2 id="什么是组件？"><a href="#什么是组件？" class="headerlink" title="什么是组件？"></a>什么是组件？</h2><p>组件 (Component) 是 Vue.js 最强大的功能之一。组件可以扩展 HTML 元素，封装可重用的代码。在较高层面上，组件是自定义元素，Vue.js 的编译器为它添加特殊功能。在有些情况下，组件也可以是原生 HTML 元素的形式，以 is 特性扩展。<br><a id="more"></a></p>
+<h2 id="使用组件"><a href="#使用组件" class="headerlink" title="使用组件"></a>使用组件</h2><h3 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h3><p>注册一个全局组件，使用 <code>Vue.component(tagName, options)</code>。例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Vue.component(&apos;my-component&apos;, &#123;</div><div class="line">  // 选项</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>组件在注册之后，便可以在父实例的模块中以自定义元素 <my-component></my-component> 的形式使用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div id=&quot;example&quot;&gt;</div><div class="line">  &lt;my-component&gt;&lt;/my-component&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>确保在初始化根实例之前注册了组件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// 注册</div><div class="line">Vue.component(&apos;my-component&apos;, &#123;</div><div class="line">  template: &apos;&lt;div&gt;A custom component!&lt;/div&gt;&apos;</div><div class="line">&#125;)</div><div class="line">// 创建根实例</div><div class="line">new Vue(&#123;</div><div class="line">  el: &apos;#example&apos;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>渲染为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div id=&quot;example&quot;&gt;</div><div class="line">   &lt;div&gt;A custom component!&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="局部注册"><a href="#局部注册" class="headerlink" title="局部注册"></a>局部注册</h3><p>不必在全局注册每个组件。通过使用组件实例选项注册，可以使组件仅在另一个实例/组件的作用域中可用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">var Child = &#123;</div><div class="line">  template: &apos;&lt;div&gt;A custom component!&lt;/div&gt;&apos;</div><div class="line">&#125;</div><div class="line">new Vue(&#123;</div><div class="line">  // ...</div><div class="line">  components: &#123;</div><div class="line">    // &lt;my-component&gt; 将只在父模板可用</div><div class="line">    &apos;my-component&apos;: Child</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>这种封装也适用于其它可注册的 Vue 功能，如指令。</p>
+<h3 id="DOM-模版解析说明"><a href="#DOM-模版解析说明" class="headerlink" title="DOM 模版解析说明"></a>DOM 模版解析说明</h3><p>当使用 DOM 作为模版时 (例如，将 el 选项挂载到一个已存在的元素上), 你会受到 HTML 的一些限制，因为 Vue 只有在浏览器解析和标准化 HTML 后才能获取模版内容。尤其像这些元素 <ul>，<ol>，<table>，<select> 限制了能被它包裹的元素，而一些像 <option> 这样的元素只能出现在某些其它元素内部。</option></select></table></ol></ul></p>
+<p>在自定义组件中使用这些受限制的元素时会导致一些问题，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;table&gt;</div><div class="line">  &lt;my-row&gt;...&lt;/my-row&gt;</div><div class="line">&lt;/table&gt;</div></pre></td></tr></table></figure></p>
+<p>自定义组件 <my-row> 被认为是无效的内容，因此在渲染的时候会导致错误。变通的方案是使用特殊的 is 属性：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;table&gt;</div><div class="line">  &lt;tr is=&quot;my-row&quot;&gt;&lt;/tr&gt;</div><div class="line">&lt;/table&gt;</div></pre></td></tr></table></figure></my-row></p>
+<p>使用来自以下来源之一的字符串模板，这些限制将不适用：</p>
+<ul>
+<li><script type="text/x-template"></li>
+<li>JavaScript 内联模版字符串</li>
+<li>.vue 组件</li>
+</ul>
+<h3 id="data-必须是函数"><a href="#data-必须是函数" class="headerlink" title="data 必须是函数"></a>data 必须是函数</h3><p>通过 Vue 构造器传入的各种选项大多数都可以在组件里用。data 是一个例外，它必须是函数。</p>
+<h3 id="构成组件"><a href="#构成组件" class="headerlink" title="构成组件"></a>构成组件</h3><p>组件意味着协同工作，通常父子组件会是这样的关系：组件 A 在它的模版中使用了组件 B。它们之间必然需要相互通信：父组件要给子组件传递数据，子组件需要将它内部发生的事情告知给父组件。然而，在一个良好定义的接口中尽可能将父子组件解耦是很重要的。这保证了每个组件可以在相对隔离的环境中书写和理解，也大幅提高了组件的可维护性和可重用性。<br>在 Vue 中，父子组件的关系可以总结为 props down, events up。父组件通过 props 向下传递数据给子组件，子组件通过 events 给父组件发送消息。看看它们是怎么工作的。<br><img src='img/props-events.png'></p>
+<h2 id="Prop"><a href="#Prop" class="headerlink" title="Prop"></a>Prop</h2><h3 id="使用Prop传递数据"><a href="#使用Prop传递数据" class="headerlink" title="使用Prop传递数据"></a>使用Prop传递数据</h3><p>组件实例的作用域是孤立的。这意味着不能 (也不应该) 在子组件的模板内直接引用父组件的数据。要让子组件使用父组件的数据，我们需要通过子组件的 props 选项。<br>子组件要显式地用 props 选项声明它期待获得的数据：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Vue.component(&apos;child&apos;, &#123;</div><div class="line">  // 声明 props</div><div class="line">  props: [&apos;message&apos;],</div><div class="line">  // 就像 data 一样，prop 可以用在模板内</div><div class="line">  // 同样也可以在 vm 实例中像“this.message”这样使用</div><div class="line">  template: &apos;&lt;span&gt;&#123;&#123; message &#125;&#125;&lt;/span&gt;&apos;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>然后我们可以这样向它传入一个普通字符串：<br><code>&lt;child message=&quot;hello!&quot;&gt;&lt;/child&gt;</code></p>
+<h3 id="动态-Prop"><a href="#动态-Prop" class="headerlink" title="动态 Prop"></a>动态 Prop</h3><p>  在模板中，要动态地绑定父组件的数据到子模板的 props，与绑定到任何普通的HTML特性相类似，就是用 v-bind。每当父组件的数据变化时，该变化也会传导给子组件：<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;div&gt;</div><div class="line">   &lt;input v-model=&quot;parentMsg&quot;&gt;</div><div class="line">   &lt;br&gt;</div><div class="line">   &lt;child v-bind:my-message=&quot;parentMsg&quot;&gt;&lt;/child&gt;</div><div class="line"> &lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>  使用 v-bind 的缩写语法通常更简单：<br>  <code>&lt;child :my-message=&quot;parentMsg&quot;&gt;&lt;/child&gt;</code></p>
+<p>###单向数据流</p>
+<p>prop 是单向绑定的：当父组件的属性变化时，将传导给子组件，但是不会反过来。这是为了防止子组件无意修改了父组件的状态——这会让应用的数据流难以理解。</p>
+<p>另外，每次父组件更新时，子组件的所有 prop 都会更新为最新值。这意味着你不应该在子组件内部改变 prop。如果你这么做了，Vue 会在控制台给出警告。</p>
+<p>为什么我们会有修改 prop 中数据的冲动呢？通常是这两种原因：</p>
+<ol>
+<li>prop 作为初始值传入后，子组件想把它当作局部数据来用；</li>
+<li>prop 作为初始值传入，由子组件处理成其它数据输出。<br>对这两种原因，正确的应对方式是：</li>
+<li><p>定义一个局部变量，并用 prop 的值初始化它：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">props: [&apos;initialCounter&apos;],</div><div class="line">data: function () &#123;</div><div class="line">  return &#123; counter: this.initialCounter &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>定义一个计算属性，处理 prop 的值并返回。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">props: [&apos;size&apos;],</div><div class="line">computed: &#123;</div><div class="line">  normalizedSize: function () &#123;</div><div class="line">    return this.size.trim().toLowerCase()</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="自定义事件"><a href="#自定义事件" class="headerlink" title="自定义事件"></a>自定义事件</h2><p>  我们知道，父组件是使用 props 传递数据给子组件，但子组件怎么跟父组件通信呢？这个时候 Vue 的自定义事件系统就派得上用场了。</p>
+<p>###使用 v-on 绑定自定义事件<br>每个 Vue 实例都实现了事件接口 (Events interface)，即：</p>
+<ul>
+<li>使用 $on(eventName) 监听事件 </li>
+<li>使用 $emit(eventName) 触发事件<blockquote>
+<p>Vue 的事件系统分离自浏览器的 EventTarget API。尽管它们的运行类似，但是 $on 和 $emit 不是addEventListener 和 dispatchEvent 的别名。</p>
 </blockquote>
-<p>14、Ctrl+] 增加缩进 [ 减小缩进。</p>
-<p>15、alt+f3 全选，可以选中一部分再选择所有有该部分的元素。如 &gt;&lt; 标签之间的两个符号</p>
-<p>16、ctrl+shift+v 保持缩进粘贴</p>
-<p>17、Alt+Ctrl+R 可以看到服务器响应</p>
-
+</li>
+</ul>
+<p>另外，父组件可以在使用子组件的地方直接用 v-on 来监听子组件触发的事件。</p>
+<blockquote>
+<p>不能用 $on 侦听子组件抛出的事件，而必须在模板里直接用 v-on 绑定，就像以下的例子：</p>
+</blockquote>
+<p>下面是一个例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;div id=&quot;counter-event-example&quot;&gt;</div><div class="line">  &lt;p&gt;&#123;&#123; total &#125;&#125;&lt;/p&gt;</div><div class="line">  &lt;button-counter v-on:increment=&quot;incrementTotal&quot;&gt;&lt;/button-counter&gt;</div><div class="line">  &lt;button-counter v-on:increment=&quot;incrementTotal&quot;&gt;&lt;/button-counter&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>Vue.component(‘button-counter’, {<br>  template: ‘<button v-on:click="incrementCounter"></button>‘,<br>  data: function () {<br>    return {<br>      counter: 0<br>    }<br>  },<br>  methods: {<br>    incrementCounter: function () {<br>      this.counter += 1<br>      this.$emit(‘increment’)<br>    }<br>  },<br>})<br>new Vue({<br>  el: ‘#counter-event-example’,<br>  data: {<br>    total: 0<br>  },<br>  methods: {<br>    incrementTotal: function () {<br>      this.total += 1<br>    }<br>  }<br>})<br>0<br>0 0</p>
+</script></li></ul>
       
 
       
@@ -290,7 +321,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/04/2017-08-04-sublime快捷键/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/03/13/2017-03-13-vue组件/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -304,18 +335,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/08/06/2017-08-06-Java进制转换/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/03/17/2017-03-17-MVVM模型/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          java进制转换
+          MVX模型
         
       </div>
     </a>
   
   
-    <a href="/2017/07/09/2017-07-09-git/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">git</div>
+    <a href="/2017/03/12/2017-03-12-webpack常用命令/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">webpack</div>
       <i class="icon-circle-right"></i>
     </a>
   

@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>sublime 快捷键来啦 | LDD小地盘</title>
+  <title>前端性能优化 | LDD小地盘</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录sublime 的快捷键">
+  <meta name="description" content="前端性能优化">
 <meta name="keywords" content="总结,知识管理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sublime 快捷键来啦">
-<meta property="og:url" content="http://yoursite.com/2017/08/04/2017-08-04-sublime快捷键/index.html">
+<meta property="og:title" content="前端性能优化">
+<meta property="og:url" content="http://yoursite.com/2017/08/17/2017-08-17-前端性能优化/index.html">
 <meta property="og:site_name" content="LDD小地盘">
-<meta property="og:description" content="记录sublime 的快捷键">
-<meta property="og:updated_time" content="2017-08-05T13:36:29.893Z">
+<meta property="og:description" content="前端性能优化">
+<meta property="og:updated_time" content="2017-08-17T04:35:05.181Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sublime 快捷键来啦">
-<meta name="twitter:description" content="记录sublime 的快捷键">
+<meta name="twitter:title" content="前端性能优化">
+<meta name="twitter:description" content="前端性能优化">
   
     <link rel="alternative" href="/atom.xml" title="LDD小地盘" type="application/atom+xml">
   
@@ -140,47 +140,46 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2017-08-04-sublime快捷键" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2017-08-17-前端性能优化" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      sublime 快捷键来啦
+      前端性能优化
     </h1>
   
 
         
-        <a href="/2017/08/04/2017-08-04-sublime快捷键/" class="archive-article-date">
-  	<time datetime="2017-08-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-04</time>
+        <a href="/2017/08/17/2017-08-17-前端性能优化/" class="archive-article-date">
+  	<time datetime="2017-08-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-17</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="记录sublime的快捷键"><a href="#记录sublime的快捷键" class="headerlink" title="记录sublime的快捷键"></a>记录sublime的快捷键</h2><p>1、Ctrl+H ：查找替换</p>
-<p>2、Ctrl+D ：选择游标所在单词，连续Ctrl+D 实现多行选择（选择与第一次选择相同的单词）</p>
-<p>3、Ctrl+K Ctrl+D 跳过当前选择，选择下一个<br><a id="more"></a></p>
-<p>4、Ctrl+shift+D：复制游标所在行</p>
-<p>5、Alt+F3：选择所有与游标所在单词相同的单词</p>
-<p>6、按住shift键，然后按住鼠标右键向下拖动，也可产生多行游标</p>
-<p>7、Ctrl+shift+p: 打开命令模式</p>
-<p>8、Ctrl+shift+k: 删除一行</p>
-<p>9、通过命令模式可以安装新的插件（package control:install package);</p>
-<p>10、隐藏或显示小地图（view：toggle minimap）；</p>
-<p>11、修改编辑区语法syntax（set syntax：）</p>
-<p>12、ctrl+shirt+enter 在当前上方添加一行</p>
-<p>13、（ul&gt;.item$*10{content}）+（ctrl+E）</p>
-<blockquote>
-<p>号生成子元素 ，$ 产生序号，{ }产生内容</p>
+        <h3 id="1-减少HTTP请求"><a href="#1-减少HTTP请求" class="headerlink" title="1. 减少HTTP请求"></a>1. 减少HTTP请求</h3><p>一个正常的HTTP请求过程是：在浏览器输入“www.XXXXX.com” 并按下回车，浏览器与这个URL所指向的服务器建立连接，连接成功之后浏览器才能向服务器发送请求信息。<br>服务器在接收到请求的信息后再返回相应的信息，浏览器接收到服务器的应答信息后，对这些数据解释执行，展示在页面上。<br>如果网页上有很多图片，CSS，js信息，将会频繁的与服务器建立连接和释放连接，这肯定会造成资源浪费。<br>网速相同的条件下，下载一个1000K的文件比下载两个500K的文件快，所以应该减少HTTP请求。<br><a id="more"></a><br>怎样减少？<br>合并图片（CSS sprites），合并CSS和js文件，图片较多的页面可以使用lazyload等技术进行优化。<br>从设计层面简化页面<br>合理设置HTTP缓存：当浏览器没有缓存的时候访问访问一个网页（**）一共发出78个请求，共600K数据，而当第二次即浏览器已经缓存之后访问仅有10个请求。（直接F5刷新页面的话效果是不一样的，这种情况下请求还是一样，不过被缓存资源的请求服务器是304响应。只有header没有body，可以节省带宽）</p>
+<h3 id="2-正确理解repaint和reflow"><a href="#2-正确理解repaint和reflow" class="headerlink" title="2. 正确理解repaint和reflow"></a>2. 正确理解repaint和reflow</h3><p>repaint意思是重绘，reflow意思是重排。</p>
+<p>重绘就是一个元素的外观被改变，但是没有改变布局（宽高）的情况下，如改变visibility,outline,背景色等等。</p>
+<p>重排就是DOM的变化影响到了元素的几何属性（宽和高），浏览器会重新计算元素的几何属性，会使渲染树中受到影响的部分失效，浏览器会验证DOM树上所有其他结点的visibility属性，这也是reflow低效的原因。如：改变窗口的大小，改变文字大小，内容的改变，浏览器窗口的变化，style属性的改变等。</p>
+<p>解决办法：</p>
+<p>设置style属性改变结点样式的话，每设置一次都会导致一次reflow，所以最好通过设置class的方式。有动画效果的元素，它的position属性应当设为fixed或absolute，这样不会影响其他元素的布局。</p>
+<h3 id="3-减少DOM操作"><a href="#3-减少DOM操作" class="headerlink" title="3. 减少DOM操作"></a>3. 减少DOM操作</h3><p>把DOM看成一个岛屿，javascript看成另一个岛屿，两者之间以一座收费桥连接。所以每次访问DOM都会交过路费，访问的次数越多，交的费用越多。</p>
+<p>解决办法：<br>修改和访问DOM元素会造成页面的重绘和重排。合理使用javascript变量存储内容，考虑大量DOM元素中循环的性能开销，所以在循环结束时一次性写入。<br>减少对DOM元素的查询和修改，查询时可将 其赋值给局部变量。</p>
+<h3 id="4-使用JSON格式来进行数据交换"><a href="#4-使用JSON格式来进行数据交换" class="headerlink" title="4. 使用JSON格式来进行数据交换"></a>4. 使用JSON格式来进行数据交换</h3><p>JSON是一种轻量级的数据交换格式，采用完全独立于语言的文本格式，是理想的数据交换格式。</p>
+<h3 id="5-高效使用HTML标签和CSS样式"><a href="#5-高效使用HTML标签和CSS样式" class="headerlink" title="5. 高效使用HTML标签和CSS样式"></a>5. 高效使用HTML标签和CSS样式</h3><p>将样式表置顶，避免css表达式，使用<link>代替@import，避免使用@import的原因很简单，因为它相当于将css放在网页内容底部。</p>
+<h3 id="6-使用CDN加速（内容分发网络）"><a href="#6-使用CDN加速（内容分发网络）" class="headerlink" title="6. 使用CDN加速（内容分发网络）"></a>6. 使用CDN加速（内容分发网络）</h3><h3 id="7-将CSS和JS放在外部文件中引用，css放在head部分，js放在body的末尾"><a href="#7-将CSS和JS放在外部文件中引用，css放在head部分，js放在body的末尾" class="headerlink" title="7. 将CSS和JS放在外部文件中引用，css放在head部分，js放在body的末尾"></a>7. 将CSS和JS放在外部文件中引用，css放在head部分，js放在body的末尾</h3><blockquote>
+<p><script>每次出现都会让页面等待脚本的解析和执行（不论JavaScript是内嵌的还是外链的），JavaScript代码执行完成后，才继续渲染页面。这个也就是JavaScript的阻塞特性。<br> 　因为这个阻塞的特点，建议把JavaScript代码放到</body>标签以前，这样既能有效的防止JavaScript的阻塞，又能使得页面的HTML结构能更快的释放。</p>
 </blockquote>
-<p>14、Ctrl+] 增加缩进 [ 减小缩进。</p>
-<p>15、alt+f3 全选，可以选中一部分再选择所有有该部分的元素。如 &gt;&lt; 标签之间的两个符号</p>
-<p>16、ctrl+shift+v 保持缩进粘贴</p>
-<p>17、Alt+Ctrl+R 可以看到服务器响应</p>
-
+<h3 id="8-精简CSS和JS文件"><a href="#8-精简CSS和JS文件" class="headerlink" title="8. 精简CSS和JS文件"></a>8. 精简CSS和JS文件</h3><p> CSS和JavaScript的压缩，直接减少下载的文件体积。</p>
+<h3 id="9-要锁图片和使用图片sprite技术"><a href="#9-要锁图片和使用图片sprite技术" class="headerlink" title="9. 要锁图片和使用图片sprite技术"></a>9. 要锁图片和使用图片sprite技术</h3><p> 一般的图片压缩的方式有：缩小图片的分辨率，改变图片格式，降低图片保存质量。</p>
+<p> 图片精灵（css sprite）就是把许多图片放到一张大图片里面，通过css来显示图片的一部分。</p>
+<h3 id="10-注意控制cookie大小和污染"><a href="#10-注意控制cookie大小和污染" class="headerlink" title="10. 注意控制cookie大小和污染"></a>10. 注意控制cookie大小和污染</h3><p>  因为Cookie是本地的磁盘文件，每次浏览器都会去读取相应的Cookie，所以建议去除不必要的Cookie，使Cookie体积尽量小以减少对用户响应的影响；<br>  使用Cookie跨域操作时注意在适应级别的域名上设置cookie以便使子域名不受其影响.</p>
+<p> Cookie是有生命周期的，所以请注意设置合理的过期时间，合理地Expire时间和不要过早去清除cookie，都会改善用户的响应时间。</p>
+<p><img src="/img/2017.08.17.1.png"></p>
+</script></p></blockquote>
       
 
       
@@ -290,7 +289,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/04/2017-08-04-sublime快捷键/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/17/2017-08-17-前端性能优化/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -304,18 +303,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/08/06/2017-08-06-Java进制转换/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/08/17/2017-08-17-TCP三次握手与四次挥手/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          java进制转换
+          TCP/IP三次握手和HTTP过程
         
       </div>
     </a>
   
   
-    <a href="/2017/07/09/2017-07-09-git/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">git</div>
+    <a href="/2017/08/17/2017-08-17-浏览器与服务器交互过程/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">浏览器与服务器交互过程</div>
       <i class="icon-circle-right"></i>
     </a>
   
