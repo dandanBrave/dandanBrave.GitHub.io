@@ -140,97 +140,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-2017-08-18-Javascript面向对象编程之封装" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/18/2017-08-18-Javascript面向对象编程之封装/">javascript面向对象编程之封装</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/18/2017-08-18-Javascript面向对象编程之封装/" class="archive-article-date">
-  	<time datetime="2017-08-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Javascript是一种<strong>基于对象</strong>（object-based）的语言，你遇到的所有东西几乎都是对象。但是，它又不是一种真正的面向对象编程（OOP）语言, <strong>因为它的语法中没有class（类）。</strong><br>那么，如果我们要把”属性”（property）和”方法”（method），封装成一个对象，甚至要从原型对象生成一个实例对象，我们应该怎么做呢？<br>
-        
-          <a class="article-more-a" href="/2017/08/18/2017-08-18-Javascript面向对象编程之封装/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">知识管理</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/blog/" class="article-tag-list-link color5">blog</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/18/2017-08-18-Javascript面向对象编程之封装/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-2017-08-18-Javascript面向对象编程之构造函数的继承" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -322,29 +231,30 @@
 
 
   
-    <article id="post-2017-08-17-前端面试题1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2017-08-18-Javascript面向对象编程之非构造函数的继承" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/17/2017-08-17-前端面试题1/">前端面试题1</a>
+      <a class="article-title" href="/2017/08/18/2017-08-18-Javascript面向对象编程之非构造函数的继承/">javascript面向对象编程之非构造函数的继承</a>
     </h1>
   
 
         
-        <a href="/2017/08/17/2017-08-17-前端面试题1/" class="archive-article-date">
-  	<time datetime="2017-08-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-17</time>
+        <a href="/2017/08/18/2017-08-18-Javascript面向对象编程之非构造函数的继承/" class="archive-article-date">
+  	<time datetime="2017-08-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="面试总结一"><a href="#面试总结一" class="headerlink" title="面试总结一"></a>面试总结一</h3><h3 id="1-css-盒模型"><a href="#1-css-盒模型" class="headerlink" title="1.css 盒模型"></a>1.css 盒模型</h3><p>   1) 内容(content)、填充(padding)、边框(border)、边界(margin)<br>   2) 有两种，IE盒子模型和标准W3C盒子模型;IE的content部分包括了padding和border.<br>
+        <p>下面介绍不使用构造函数实现”继承”。<br>一、什么是”非构造函数”的继承？<br>比如，现在有一个对象，叫做”中国人”。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> Chinese = &#123;</div><div class="line">　  <span class="attr">nation</span>:<span class="string">'中国'</span></div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<p>　<br>
         
-          <a class="article-more-a" href="/2017/08/17/2017-08-17-前端面试题1/#more">more >></a>
+          <a class="article-more-a" href="/2017/08/18/2017-08-18-Javascript面向对象编程之非构造函数的继承/#more">more >></a>
         
       
 
@@ -383,7 +293,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/17/2017-08-17-前端面试题1/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/08/18/2017-08-18-Javascript面向对象编程之非构造函数的继承/">展开全文 >></a>
         </p>
       
 
@@ -475,6 +385,97 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/08/17/2017-08-17-浏览器与服务器交互过程/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-2017-08-17-前端面试题1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/17/2017-08-17-前端面试题1/">前端面试题1</a>
+    </h1>
+  
+
+        
+        <a href="/2017/08/17/2017-08-17-前端面试题1/" class="archive-article-date">
+  	<time datetime="2017-08-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="面试总结一"><a href="#面试总结一" class="headerlink" title="面试总结一"></a>面试总结一</h3><h3 id="1-css-盒模型"><a href="#1-css-盒模型" class="headerlink" title="1.css 盒模型"></a>1.css 盒模型</h3><p>   1) 内容(content)、填充(padding)、边框(border)、边界(margin)<br>   2) 有两种，IE盒子模型和标准W3C盒子模型;IE的content部分包括了padding和border.<br>
+        
+          <a class="article-more-a" href="/2017/08/17/2017-08-17-前端面试题1/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">知识管理</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/blog/" class="article-tag-list-link color5">blog</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/08/17/2017-08-17-前端面试题1/">展开全文 >></a>
         </p>
       
 
